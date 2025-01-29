@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Mockup</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #000;
+    }
+
+    /* Header */
+    header {
+      background-color: #d71920;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      gap: 15px;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      padding: 8px 12px;
+    }
+
+    nav a:hover {
+      background-color: #f5f5f5;
+      border-radius: 4px;
+    }
+
+    /* Layout */
+    .container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    /* Main Content */
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .main-article img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .main-article h2 {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+
+    .category {
+      color: red;
+      font-weight: bold;
+    }
+
+    .secondary-articles {
+      display: flex;
+      gap: 20px;
+    }
+
+    .secondary-articles .article {
+      flex: 1;
+    }
+
+    .secondary-articles img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .secondary-articles h3 {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      background: #f8f8f8;
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+    .sidebar h3 {
+      margin-top: 0;
+      border-bottom: 2px solid red;
+      padding-bottom: 5px;
+    }
+
+    .sidebar p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .sidebar p strong {
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background-color: #d71920;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .btn:hover {
+      background-color: #b0171c;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">The Economist</div>
+    <div>
+      <nav>
+        <a href="#">Menu</a>
